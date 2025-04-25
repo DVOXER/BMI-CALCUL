@@ -1,129 +1,66 @@
-# BMI-CALCUL
+My BMI Calculator App
+Hey there! 👋 Welcome to my BMI Calculator project. I built this app to help people track their BMI (Body Mass Index) in a simple and intuitive way. It's my first serious Flutter project with Firebase integration, and I'm pretty excited to share it.
+What's This App About?
+I created this BMI calculator to solve a common problem: making health tracking accessible and straightforward. My app lets you:
 
-BMI Calculator App
-<div align="center">
-  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" />
-  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" />
-  <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Dart" />
-</div>
-A modern, user-friendly Body Mass Index (BMI) calculator application built with Flutter and Firebase. The app provides a comprehensive solution for tracking and managing BMI records with multi-language support.
-Features
+Calculate your BMI with just your height and weight
+See where you stand with a cool animated gauge
+Track your BMI history over time
+Use the app in English, Arabic, or French (I wanted to make it accessible!)
 
-User Authentication: Secure login and registration system using Firebase Authentication
-BMI Calculation: Calculate BMI based on weight and height inputs
-Visual Representation: Animated gauge to visualize BMI categories
-History Tracking: Save and view BMI history with timestamps
-Multi-language Support: Available in English, Arabic, and French with automatic RTL support
-Responsive Design: Works across different device sizes and orientations
+Tech I Used
 
-Screenshots
-<!-- Add screenshots of your app here -->
-Tech Stack
+Flutter for building the cross-platform UI
+Firebase for authentication and storing user data
+Shared Preferences for saving user settings like language preference
+Custom localization system I built from scratch
 
-Frontend: Flutter SDK
-Backend: Firebase (Authentication, Firestore)
-State Management: Flutter's built-in StatefulWidget
-Localization: Custom localization service with shared preferences
-UI Components: Material Design
+Features I'm Proud Of
+User-Friendly Authentication
+I implemented a complete login/registration system with Firebase. The app remembers who you are so you don't need to log in every time.
+Smooth BMI Calculation
+Just enter your weight and height, and the app calculates your BMI instantly. I added an animated gauge to visually show where your BMI falls on the scale.
+Multi-Language Support
+I added support for English, Arabic and French. The app even handles right-to-left text direction for Arabic automatically!
+History Tracking
+Every BMI calculation is saved to your personal history, so you can track changes over time.
+How to Run My Project
+
+Clone this repo to your local machine
+Run flutter pub get to install dependencies
+Make sure you have Firebase configured (see Firebase setup section below)
+Run the app with flutter run
+
+Firebase Setup
+You'll need to:
+
+Create a Firebase project
+Enable Authentication with Email/Password
+Set up Cloud Firestore
+Update the Firebase config file with your credentials
 
 Project Structure
+I organized my code like this:
 lib/
-├── main.dart                   # Entry point for the application
-├── auth_screens.dart           # Login and registration screens
-├── bmi_calculator.dart         # BMI calculation and visualization
-├── firebase_config.dart        # Firebase configuration and BMI model
-├── language_selection.dart     # Language selection screen
-├── localization_service.dart   # Localization management
-└── translations/               # Translation files
-    ├── en.dart                 # English translations
-    ├── ar.dart                 # Arabic translations
-    └── fr.dart                 # French translations
-Getting Started
-Prerequisites
+├── main.dart                  # App entry point
+├── auth_screens.dart          # Login and registration screens
+├── bmi_calculator.dart        # The main BMI calculator functionality
+├── firebase_config.dart       # Firebase setup
+├── language_selection.dart    # Language picker
+├── localization_service.dart  # My custom localization service
+└── translations/              # Language files
+    ├── en.dart
+    ├── ar.dart
+    └── fr.dart
+Future Plans
+I'm planning to add:
 
-Flutter SDK (3.1.0 or higher)
-Dart SDK
-Firebase account
-Android Studio / VS Code
+Weight/BMI trend graphs
+Option to switch between metric and imperial units
+More languages
+Cloud sync across devices
+Dark mode
 
-Installation
-
-Clone the repository:
-bashgit clone https://github.com/your-username/bmi-calculator.git
-cd bmi-calculator
-
-Install dependencies:
-bashflutter pub get
-
-Connect to Firebase:
-
-Create a new Firebase project
-Configure Firebase for Flutter as shown in the official documentation
-Enable Authentication and Firestore services
-
-
-Run the app:
-bashflutter run
-
-
-Firebase Configuration
-The app uses Firebase for authentication and storing BMI records. You'll need to set up:
-
-Authentication: Enable Email/Password sign-in method
-Firestore Database: Create a database with the following collections:
-
-users: User profiles
-bmi_records: BMI calculation history
-
-
-
-Localization
-The app supports multiple languages:
-
-English
-Arabic (with RTL support)
-French
-
-To add more languages:
-
-Create a new translation file in the translations folder
-Update the LocalizationService to include the new language
-Add the language option in the LanguageSelectionScreen
-
-Features In Detail
-BMI Calculation
-The app calculates BMI using the formula: BMI = weight(kg) / height²(m)
-The BMI categories are:
-
-Below 16: Severely Underweight
-16-18.5: Underweight
-18.5-25: Optimal
-25-30: Overweight
-30-35: Obese
-Above 35: Severely Obese
-
-Authentication Flow
-
-First-time users are directed to language selection
-Users can register with email, password, and name
-Returning users can sign in with email and password
-Firebase handles authentication state persistence
-
-BMI History
-The app stores each BMI calculation with:
-
-User ID
-Weight
-Height
-Calculated BMI
-BMI Category
-Timestamp
-
-Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-Fork the repository
-Create your feature branch (git checkout -b feature/AmazingFeature)
-Commit your changes (git commit -m 'Add some AmazingFeature')
-Push to the branch (git push origin feature/AmazingFeature)
-Open a Pull Request
+Thanks for Checking This Out!
+Feel free to use this code, modify it, or suggest improvements! If you have any questions or want to collaborate, just reach out.
+Screenshots
