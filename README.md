@@ -80,3 +80,10 @@ Feel free to use this code, modify it, or suggest improvements! If you have any 
 ## Screenshots
 
 <!-- I'll add some screenshots of my app in action here -->
+![Capture d'écran 2025-04-25 094814](https://github.com/user-attachments/assets/1a5292b9-4532-48df-a43c-391d971649f6)
+![Capture d'écran 2025-04-25 094804](https://github.com/user-attachments/assets/34c15709-9f7b-4b15-be14-3f8aa6c31929)
+![Capture d'écran 2025-04-25 094917](https://github.com/user-attachments/assets/711efaa9-1eda-4574-bc08-08e6402f34bf)
+![Capture d'écran 2025-04-25 094904](https://github.com/user-attachments/assets/2f3a6832-915e-4700-8a5e-57d81166edfd)
+![Capture d'écran 2025-04-25 094851](https://github.com/user-attachments/assets/a6debd0b-916c-48f4-9794-cc27e8874194)
+![Capture d'écran 2025-04-25 094845](https://github.com/user-attachments/assets/5b5480b9-18b8-453f-a039-8b9fd5c200ea)
+![Capture d'écran 2025-04-25 094821](https://github.com/user-attachments/assets/66329960-8b8b-4b64-aa14-14b19365a99d)
