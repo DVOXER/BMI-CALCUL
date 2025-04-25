@@ -1,0 +1,35 @@
+name: cbmi
+description: A Flutter project for CBMI tracking
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.16.0
+  cloud_firestore: ^4.13.6
+  shared_preferences: ^2.2.2
+  flag: ^6.0.0  # Or check for the latest version
+
+
+  # Web interoperability
+  js: ^0.7.1
+
+  # Authentication providers
+  google_sign_in: ^6.2.1
+
+  # UI and utility packages
+  fluttertoast: ^8.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  build_runner: ^2.4.7
+
+flutter:
+  uses-material-design: true
